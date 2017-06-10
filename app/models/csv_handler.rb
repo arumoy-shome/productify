@@ -1,6 +1,4 @@
 class CsvHandler
-  BRANDS = ['HJC', 'ICON', 'ALPINESTARS', 'CARDO SYSTEMS'].freeze
-
   OPTIONS = {
     key_mapping: {
       part_number: :part_number,

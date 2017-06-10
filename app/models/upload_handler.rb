@@ -1,10 +1,6 @@
 require 'dotenv/load'
 
 class UploadHandler
-  SHOP_URL = "https://#{ENV['SHOPIFY_API_KEY']}:#{ENV['SHOPIFY_API_PASSWORD']}" \
-    "@613-motorsports.myshopify.com/admin"
-  REJECTED_ATTRIBUTES = %w[id part_number product_id created_at updated_at]
-
   def self.call
     ShopifyAPI::Base.site = SHOP_URL
 
